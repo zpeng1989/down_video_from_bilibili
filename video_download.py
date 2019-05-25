@@ -180,7 +180,7 @@ if __name__ == '__main__':
         down_video(video_list, title, start_url, page)
         combine_video(video_list, title)
 
-    # 如果是windows系统，下载完成后打开下载目录
+    # 如果是windows系统，下载完成后打开下载目录, 更新
     currentVideoPath = os.path.join(sys.path[0], 'bilibili_video')  # 当前目录作为下载目录
     if (sys.platform.startswith('win')):
         os.startfile(currentVideoPath)
